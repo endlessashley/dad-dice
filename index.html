@@ -2,43 +2,76 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Sports Illustrated Superstar Baseball Dice</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>Dad Dice</h1>
-        </header>
-        <div class="card">
-            <button id="roll-dice-button-1" class="btn" onclick = "rollDieOne()">Roll Die One</button>
-            <p id = "die-one-result" style = 
-            "font-size: 24px; font-weight: bold; color: red;"> 
-            </p> 
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class=card id= "header">
+        <h1>Sports Illustrated Superstar Baseball Dice</h1>
         </div>
-        <div class="card">
-            <button id="roll-dice-button-2" class="btn" onclick = "rollDieTwo()">Roll Die One</button>
-            <p id = "die-two-result" style = 
-            "font-size: 24px; font-weight: bold; color: blue;"> 
-            </p> 
-        </div>
-        <div class="card">
-            <button id="roll-dice-button-3" class="btn" onclick = "rollDieThree()">Roll Die One</button>
-            <p id = "die-three-result" style = 
-            "font-size: 24px; font-weight: bold; color: blue;"> 
-            </p> 
-        </div>
-        <div class="card">
-            <button id="tally-button" class="btn" onclick = "tallyResults()">Tally Results</button>
-            <p id = "total-dice-value" style = 
-            "font-size: 24px; font-weight: bold; color: black;"> 
-            </p> 
-        </div>
+      </div>
     </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <button id="roll-dice-button-1" class="btn btn-lg btn-primary" onclick="rollDieOne()">Click Roll the Dice!</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card" id="die-one-background">
+          <div class="card-body" id="die-one">
+            <h5 class="card-title">Die One:</h5>
+            <div class="card-body die-one-card" id="die-one-result"></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-4">
+        <div class="card" id="die-two-background">
+          <div class="card-body" id="die-two">
+            <h5 class="card-title">Die Two:</h5>
+            <div class="card-body die-two-card" id="die-two-result"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card" id="die-three-background">
+          <div class="card-body" id="die-three">
+            <h5 class="card-title">Die Three:</h5>
+            <div class="card-body die-three-card" id="die-three-result"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card" id="results-background">
+          <div class="card-body">
+            <h5 class="card-title">Total:</h5>
+            <div class="card-body die-one-card" id="total-dice-value"
+              style="font-size: 24px; font-weight: bold; color: black;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
     <script src="script.js"></script>
 </body>
 

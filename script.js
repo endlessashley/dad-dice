@@ -25,12 +25,24 @@ function rollDieOne() {
     dieOneOutcome = dieOne[Math.floor(Math.random() * dieOne.length)];
 
     //This is where we tell the outcome of the roll to display on the HTML website.
-    dieOneResult.innerHTML = dieOneOutcome
+    
+    // dieOneResult.innerHTML = dieOneOutcome
 
     //Except that result wasn't ACTUALLY a number. Our dieOne list is actually storing the text value
     //of those numbers, but not a number value that you can, like, do math with. This method converts that
     //text value to a number value, so that we'll be able to add up all the dice rolls at the end.
     dieOneNum = parseInt(dieOneOutcome, 10);
+
+
+    if (dieOneNum === 1) {
+        dieOneResult.innerHTML = "<img src='/images/dice-1-sm.png'/>"
+    } else if (dieOneNum === 2) {
+        dieOneResult.innerHTML = "<img src='/images/dice-2-sm.png'/>"
+    } else {
+        dieOneResult.innerHTML = "<img src='/images/dice-3-sm.png'/>"
+    }
+
+    console.log(dieOneNum)
 
     //This is where we tell it to automatically start the next function, rolling the second die
     // once it finishes doing all that stuff above.
@@ -44,6 +56,22 @@ function rollDieTwo() {
     dieTwoResult.innerHTML = dieTwoOutcome
     dieTwoNum = parseInt(dieTwoOutcome, 10);
 
+    if (dieTwoNum === 0) {
+        dieTwoResult.innerHTML = "<img src='/images/dice-0-sm.png'/>"
+    } else if (dieTwoNum === 1) {
+        dieTwoResult.innerHTML = "<img src='/images/dice-1-sm.png'/>"
+    } else if (dieTwoNum === 2) {
+        dieTwoResult.innerHTML = "<img src='/images/dice-2-sm.png'/>"
+    } else if (dieTwoNum === 3) {
+        dieTwoResult.innerHTML = "<img src='/images/dice-3-sm.png'/>"
+    } else if (dieTwoNum === 4) {
+        dieTwoResult.innerHTML = "<img src='/images/dice-4-sm.png'/>"
+    } else {
+        dieTwoResult.innerHTML = "<img src='/images/dice-4-sm.png'/>"
+    }
+
+    console.log(dieTwoNum)
+
     rollDieThree()
 
 }
@@ -51,8 +79,23 @@ function rollDieTwo() {
 function rollDieThree() {
 
     dieThreeOutcome = dieThree[Math.floor(Math.random() * dieThree.length)];
-    dieThreeResult.innerHTML = dieThreeOutcome
+    // dieThreeResult.innerHTML = dieThreeOutcome
     dieThreeNum = parseInt(dieThreeOutcome, 10);
+
+    if (dieThreeNum === 0) {
+        dieThreeResult.innerHTML = "<img src='/images/dice-0-sm.png'/>"
+    } else if (dieTwoNum === 1) {
+        dieThreeResult.innerHTML = "<img src='/images/dice-1-sm.png'/>"
+    } else if (dieTwoNum === 2) {
+        dieThreeResult.innerHTML = "<img src='/images/dice-2-sm.png'/>"
+    } else if (dieTwoNum === 3) {
+        dieThreeResult.innerHTML = "<img src='/images/dice-3-sm.png'/>"
+    } else {
+        dieThreeResult.innerHTML = "<img src='/images/dice-4-sm.png'/>"
+    }
+
+    console.log(dieThreeNum)
+
 
     tallyResults()
 
@@ -62,7 +105,7 @@ function rollDieThree() {
 
 function tallyResults() {
 
-    tallyOutcome = dieOneNum + dieTwoNum + dieThreeNum;
+    tallyOutcome = 10 * dieOneNum + (dieTwoNum + dieThreeNum);
     tallyResult.innerHTML = tallyOutcome
 
 }
