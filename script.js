@@ -24,16 +24,12 @@ function rollDieOne() {
     //This selects a random element in our dieOne array from above. 
     dieOneOutcome = dieOne[Math.floor(Math.random() * dieOne.length)];
 
-    //This is where we tell the outcome of the roll to display on the HTML website.
-    
-    // dieOneResult.innerHTML = dieOneOutcome
-
     //Except that result wasn't ACTUALLY a number. Our dieOne list is actually storing the text value
     //of those numbers, but not a number value that you can, like, do math with. This method converts that
     //text value to a number value, so that we'll be able to add up all the dice rolls at the end.
     dieOneNum = parseInt(dieOneOutcome, 10);
 
-
+    //This is where we tell it to display an image of the dice that reflects the result of the roll.
     if (dieOneNum === 1) {
         dieOneResult.innerHTML = "<img src='/images/dice-1-sm.png'/>"
     } else if (dieOneNum === 2) {
