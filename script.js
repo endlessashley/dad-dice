@@ -31,11 +31,11 @@ function rollDieOne() {
 
     //This is where we tell it to display an image of the dice that reflects the result of the roll.
     if (dieOneNum === 1) {
-        dieOneResult.innerHTML = "<img src='./images/dice-1-sm.png'/>"
+        dieOneResult.innerHTML = "<img src='/assets/images/dice-1-sm.png'/>"
     } else if (dieOneNum === 2) {
-        dieOneResult.innerHTML = "<img src='./images/dice-2-sm.png'/>"
+        dieOneResult.innerHTML = "<img src='/assets/images/dice-2-sm.png'/>"
     } else {
-        dieOneResult.innerHTML = "<img src='./images/dice-3-sm.png'/>"
+        dieOneResult.innerHTML = "<img src='/assets/images/dice-3-sm.png'/>"
     }
 
     console.log(dieOneNum)
@@ -53,17 +53,17 @@ function rollDieTwo() {
     dieTwoNum = parseInt(dieTwoOutcome, 10);
 
     if (dieTwoNum === 0) {
-        dieTwoResult.innerHTML = "<img src='./images/dice-0-sm.png'/>"
+        dieTwoResult.innerHTML = "<img src='/assets/images/dice-0-sm.png'/>"
     } else if (dieTwoNum === 1) {
-        dieTwoResult.innerHTML = "<img src='./images/dice-1-sm.png'/>"
+        dieTwoResult.innerHTML = "<img src='/assets/images/dice-1-sm.png'/>"
     } else if (dieTwoNum === 2) {
-        dieTwoResult.innerHTML = "<img src='./images/dice-2-sm.png'/>"
+        dieTwoResult.innerHTML = "<img src='/assets/images/dice-2-sm.png'/>"
     } else if (dieTwoNum === 3) {
-        dieTwoResult.innerHTML = "<img src='./images/dice-3-sm.png'/>"
+        dieTwoResult.innerHTML = "<img src='/assets/images/dice-3-sm.png'/>"
     } else if (dieTwoNum === 4) {
-        dieTwoResult.innerHTML = "<img src='./images/dice-4-sm.png'/>"
+        dieTwoResult.innerHTML = "<img src='/assets/images/dice-4-sm.png'/>"
     } else {
-        dieTwoResult.innerHTML = "<img src='./images/dice-4-sm.png'/>"
+        dieTwoResult.innerHTML = "<img src='/assets/images/dice-4-sm.png'/>"
     }
 
     console.log(dieTwoNum)
