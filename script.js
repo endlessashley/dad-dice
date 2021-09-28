@@ -63,7 +63,7 @@ function rollDieTwo() {
     } else if (dieTwoNum === 4) {
         dieTwoResult.innerHTML = "<img src='images/dice-4-sm.png'/>"
     } else {
-        dieTwoResult.innerHTML = "<img src='images/dice-4-sm.png'/>"
+        dieTwoResult.innerHTML = "<img src='images/dice-5-sm.png'/>"
     }
 
     console.log(dieTwoNum)
@@ -80,11 +80,11 @@ function rollDieThree() {
 
     if (dieThreeNum === 0) {
         dieThreeResult.innerHTML = "<img src='images/dice-0-sm.png'/>"
-    } else if (dieTwoNum === 1) {
+    } else if (dieThreeNum === 1) {
         dieThreeResult.innerHTML = "<img src='images/dice-1-sm.png'/>"
-    } else if (dieTwoNum === 2) {
+    } else if (dieThreeNum === 2) {
         dieThreeResult.innerHTML = "<img src='images/dice-2-sm.png'/>"
-    } else if (dieTwoNum === 3) {
+    } else if (dieThreeNum === 3) {
         dieThreeResult.innerHTML = "<img src='images/dice-3-sm.png'/>"
     } else {
         dieThreeResult.innerHTML = "<img src='images/dice-4-sm.png'/>"
