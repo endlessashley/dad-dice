@@ -15,8 +15,8 @@ var dieTwo = ["0", "1", "2", "3", "4", "5"];
 var dieThree = ["0", "0", "1", "2", "3", "4"];
 
 //Roll dice functions. I set it up so that you're effectively rolling all three dice at one time.
-//(I can change that if you want, btw). In the html file, I set the "roll dice" button to set off
-//the following chain of events, where dice one automaticallypasses the torch to dice three, etc, 
+//(I can change that if you want, btw). In the html file, I tell the "roll dice" button to set off
+//the following chain of events when it's clicked, where dice one automatically passes the torch to dice three, etc, 
 //until they're all tallied up at the end.
 
 function rollDieOne() {
